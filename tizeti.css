@@ -1,0 +1,51 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(./hotspotbg.jpg);
+    background-repeat: no-repeat; 
+    
+    
+}
+/* .img{
+
+    
+    background-image: url(./hotspotbg.jpg);
+    width: 60%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.myForm{
+    text-align: center; 
+    background: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 100vh;
+    
+    
+}
+
+input{
+    width: 90%;
+    height: 9vh;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 20px 
+    
+}
+
+button{
+    width: 90%;
+    margin-left: 20px;
+    height: 9vh;
+    background: #24BCA5;
+    cursor: pointer;
+    border: none
+}
+
+label{
+    float: left;
+}
+
+

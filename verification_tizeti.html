@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="tizeti.css">
+</head>
+<body>
+        <div class="img">
+
+            </div>
+            <div class="myForm">
+                <form action="#">
+                <img  src="./hotspotlogo.jpg" alt="">
+                <br>
+                <span style="font-size: 20px; font-weight: bold;text-align: center">Verification SMS/Call sent, Enter the verification code received
+                    </span><br>
+                
+                
+                
+                            <p id="demo"></p>                <br>
+                <input id="text2" type="number" placeholder="" required minlength="6" maxlength="6">
+                <br>
+                <br>
+                
+                 
+                 <br>
+                 
+                <button style="font-size: 17px" id="form">Complete Registration</button>
+        <br><br>
+        <br>
+                 <p>Email: hotspot@tizeti.com | For enquires and connectivity issues | Dev ID: 00:1B:77:97:B1:86</p>
+            
+                 </form>
+                </div>
+
+                <script>
+                    var button = document.getElementById("form");
+                    var input = document.getElementById("text2").value;
+                    var msg = document.getElementById("demo");
+
+                    button.onclick = function () {
+                        if (input == "") {
+                            msg.innerHTML = "Error, Code Needed ";
+                            msg.style.color = "red"
+                        }
+                        else{
+                            msg.innerHTML = "";
+                        }
+                        if (input.lenght < 5) {
+                             msg.innerHTML = "Error, Please provide a valid Code"
+                        } else {
+                            
+                        }
+                    }
+                </script>
+</body>
+</html>

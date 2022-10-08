@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tizeti Wifi</title>
+    <link rel="stylesheet" href="tizeti.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="img">
+
+    </div>
+    <div class="myForm">
+        <form action="./verification_tizeti.html">
+        <img  src="./hotspotlogo.jpg" alt="">
+        <br>
+        <span style="font-size: 35px; font-weight: bold;text-align: center">Welcome to Tezeti Hospot</span><br>
+        <span style="text-align: center;">Connect to the hotspot service with your registered device or you can create a new account</span>
+       <br><br> <label for="name">First Name<span style="color: red">*</span></label>
+        <br><br> 
+         <input id="text" type="text" placeholder="" required>
+         <p style="color: red"  id="demo"></p>
+         <br>
+         <label for="email">Email-Address<span style="color: red">*</span></label>
+        
+         <br>
+         
+         <input id="text1" type="email" placeholder="" required>
+         <p style="color: red"  id="demo2"></p>
+         <br>
+         <label for="number">Phone-Number<span style="color: red">*</span></label>
+         <br><br>
+         <input id="text2" type="number" placeholder="" required >
+         <p style="color: red" id="demo3"></p>
+         <br>
+         <br>
+         
+        <button id="form">GET FREE WIFI</button>
+<br><br>
+<br>
+         <p>Email: hotspot@tizeti.com | For enquires and connectivity issues | Dev ID: 00:1B:77:97:B1:86</p>
+    
+         </form>
+        </div>
+
+    <script src="tizeti.js"></script>
+    <script>
+       
+       var button = document.getElementById("form");
+       
+       button.onclick = function() {
+           var name = document.getElementById("text").value;
+           
+           
+           if (name == null ||name == "") {
+        document.getElementById("demo").innerHTML = "Error, Please Provide Your FullName";
+        
+    } else {
+        document.getElementById("demo").innerHTML = "";
+    };
+    var email = document.getElementById("text1").value;
+    if (email == "") {
+        document.getElementById("demo2").innerHTML = "Error, Please Provide Your Email";
+        
+    }
+    else {
+        document.getElementById("demo2").innerHTML = "";
+    };
+    var number = document.getElementById("text2").value;
+    if (number == "") {
+        document.getElementById("demo3").innerHTML = "Error, Please Provide Your Phone Number";
+        
+    }
+    else {
+        document.getElementById("demo3").innerHTML = "";
+    }
+    
+}
+
+
+    </script>
+</body>
+</html>
